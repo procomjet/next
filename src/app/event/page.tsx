@@ -1,6 +1,7 @@
 "use client";
 
 import ReusableSlide from "@/components/ReusableSlide";
+import Image from "next/image";
 
 export default function Home() {
   const title = "Event";
@@ -22,6 +23,12 @@ export default function Home() {
           </div>
           <ReusableSlide i={img} />
         </div>
+        <Image
+          src="/main/event-detail.png"
+          width={1920}
+          height={443}
+          alt="best-detail"
+        />
         <div className="w-[1920px] h-[1022px] bg-cover bg-center flex items-center justify-center relative transition-opacity duration-500" />
       </div>
     </>
