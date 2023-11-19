@@ -1,3 +1,5 @@
+// import { Button } from "@nextui-org/react";
+
 export default function login() {
   return (
     <div className="absolute w-[1920px] h-[35px] bg-[#000000]">
@@ -9,6 +11,13 @@ export default function login() {
           <div className="w-[25px] top-[3px] left-[18px] [font-family:'NEXON_Lv1_Gothic_Low_OTF-Regular',Helvetica] font-normal text-[8px] leading-[12.1px] whitespace-nowrap absolute text-white tracking-[0] transition duration-300 ease-in-out hover:text-gray-500">
             로그인
           </div>
+          {/* <Button
+            size="sm"
+            radius="full"
+            className="bg-black border border-white text-white font-semibold w-[25px] h-[20px]"
+          >
+            로그인
+          </Button> */}
         </div>
       </div>
     </div>

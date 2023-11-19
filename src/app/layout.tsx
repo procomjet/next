@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Unity + Nextjs",
-  description: "너무 과한데?",
+  description: "Bookly",
 };
 
 export default function RootLayout({
