@@ -2,7 +2,7 @@
 
 import { Button } from "@nextui-org/react";
 
-export default function DetailContext(e) {
+export default function DetailContext(e: any) {
   return (
     <div className="relative w-[1111px] left-[708px] h-[768px] top-[100px]">
       <div

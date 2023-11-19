@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../app/globals.css";
 import Image from "next/image";
 
-export default function ReusableSlide(i) {
+export default function ReusableSlide(i: any) {
   console.log(i.i);
 
   const images = i.i;
