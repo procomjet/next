@@ -7,7 +7,7 @@ import {
   Button,
 } from "@nextui-org/react";
 
-export default function Pointer(e) {
+export default function Pointer(e: any) {
   return (
     <div className="absolute w-[1920px] h-[123px] top-[118px]">
       <div className="w-[1920px] h-[123px] top-0 bg-white border-b border-t [border-top-style:solid] [border-bottom-style:solid] border-black absolute left-0">

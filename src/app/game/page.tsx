@@ -3,9 +3,8 @@
 import { useRef } from "react";
 import Detail from "@/components/Detail";
 import Pointer from "./_component/Pointer";
-import UnityPage from "./_component/UnityPage";
 import GameLoading from "./_component/GameLoading";
-
+import { Unity } from "react-unity-webgl";
 import { useUnityContext } from "react-unity-webgl";
 
 export default function Home() {
@@ -26,7 +25,15 @@ export default function Home() {
     <div>
       <Pointer e={onContentClick} />
       {isLoaded === false && <GameLoading />}
-      <UnityPage unityProvider={unityProvider} />
+      <Unity
+        unityProvider={unityProvider}
+        style={{
+          width: "1152px",
+          height: "648px",
+          marginLeft: "384px",
+          marginTop: "330px",
+        }}
+      />
       <Detail e={contentRef} />
     </div>
   );
