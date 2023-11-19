@@ -21,9 +21,11 @@ export default function NavBar() {
             Best
           </button>
         </Link>
-        <button className="absolute w-[17px] h-[14px] -top-px left-[430px] [font-family:'NIXGONFONTS_v2.0-L',Helvetica] font-normal text-black text-[18px] tracking-[0] leading-[14px] whitespace-nowrap transition duration-300 ease-in-out hover:text-gray-500">
-          Audio
-        </button>
+        <Link href="/audio">
+          <button className="absolute w-[17px] h-[14px] -top-px left-[430px] [font-family:'NIXGONFONTS_v2.0-L',Helvetica] font-normal text-black text-[18px] tracking-[0] leading-[14px] whitespace-nowrap transition duration-300 ease-in-out hover:text-gray-500">
+            Audio
+          </button>
+        </Link>
         <Link href="/event">
           <button className="absolute w-[17px] h-[14px] -top-px left-[630px] [font-family:'NIXGONFONTS_v2.0-L',Helvetica] font-normal text-black text-[18px] tracking-[0] leading-[14px] whitespace-nowrap transition duration-300 ease-in-out hover:text-gray-500">
             Event

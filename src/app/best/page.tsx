@@ -1,6 +1,7 @@
 "use client";
 
 import ReusableSlide from "@/components/ReusableSlide";
+import Image from "next/image";
 
 export default function Home() {
   const title = "Best";
@@ -21,6 +22,12 @@ export default function Home() {
             {title}
           </div>
           <ReusableSlide i={img} />
+          <Image
+            src="/main/best-detail.png"
+            width={1920}
+            height={1915}
+            alt="best-detail"
+          />
         </div>
         <div className="w-[1920px] h-[1022px] bg-cover bg-center flex items-center justify-center relative transition-opacity duration-500" />
       </div>
