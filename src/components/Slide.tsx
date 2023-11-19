@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Slide() {
   const images = ["/main/green.png", "/main/blue.png", "/main/red.png"];
@@ -39,15 +40,6 @@ export default function Slide() {
       <div className="w-full h-full absolute flex items-center justify-center">
         {currentImage === 1 && (
           <>
-            {/* 'blue.png'에 대해서만 내용을 조건부로 렌더링 */}
-            {/* <button className="absolute w-[81px] h-[39px] top-[614px] left-[920px] pl-[17px] pr-[12.64px] py-2.5 bg-white hover:bg-gray-300 rounded-[20px] cursor-pointer hover:shadow-md">
-              <Link href="/game">
-                <div className="absolute w-[51px] h-[19px] top-[9px] left-[15px] font-normal text-black text-[13px] text-center font-['NIXGONFONTS V2.0']">
-                  play
-                </div>
-              </Link>
-            </button> */}
-
             <Link href="/choosegame">
               <div className="absolute top-[550px] left-[260px] items-center justify-center bg-black text-gray-100 py-18">
                 <button className="button button--nanuk button--round-l button--text-thick button--inverted">
@@ -69,7 +61,7 @@ export default function Slide() {
         className="absolute top-[50%] left-6 transform -translate-y-1/2 bg-transparent rounded-full p-2 cursor-pointer"
         onClick={prevImage}
       >
-        <img src="/main/vector-1.svg" />
+        <Image src="/main/vector-1.svg" width={80} height={80} alt="vector-1" />
       </button>
 
       {/* 오른쪽 화살표 버튼 */}
@@ -77,7 +69,7 @@ export default function Slide() {
         className="absolute top-[50%] right-10 transform -translate-y-1/2 bg-transparent rounded-full p-2 cursor-pointer"
         onClick={nextImage}
       >
-        <img src="/main/vector-2.svg" />
+        <Image src="/main/vector-2.svg" width={80} height={80} alt="vector-2" />
       </button>
     </div>
   );
