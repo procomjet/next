@@ -15,12 +15,6 @@ export default function ReusableSlide(i) {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
     };
 
-    const prevImage = () => {
-      setCurrentImage(
-        (prevImage) => (prevImage - 1 + images.length) % images.length
-      );
-    };
-
     const intervalId = setInterval(() => {
       setFade(true);
       setTimeout(() => {
@@ -31,6 +25,17 @@ export default function ReusableSlide(i) {
 
     return () => clearInterval(intervalId);
   }, [currentImage, images.length]);
+
+  const nextImage = () => {
+    setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImage(
+      (prevImage) => (prevImage - 1 + images.length) % images.length
+    );
+  };
+
   return (
     <>
       <div

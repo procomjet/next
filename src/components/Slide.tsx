@@ -9,6 +9,10 @@ export default function Slide() {
   const [fade, setFade] = useState<boolean>(false);
 
   useEffect(() => {
+    const nextImage = () => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    };
+
     const intervalId = setInterval(() => {
       setFade(true);
       setTimeout(() => {
@@ -18,7 +22,7 @@ export default function Slide() {
     }, 6000);
 
     return () => clearInterval(intervalId);
-  }, [currentImage]);
+  }, [currentImage, images.length]);
 
   const nextImage = () => {
     setCurrentImage((prevImage) => (prevImage + 1) % images.length);
