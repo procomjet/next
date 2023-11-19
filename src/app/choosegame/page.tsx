@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import Gamelist from "./_component/Gamelist";
+
 export default function Home() {
   const [isImageVisible, setIsImageVisible] = useState(false);
 
@@ -22,8 +24,10 @@ export default function Home() {
           isImageVisible ? "opacity-100" : "opacity-0"
         }`}
       >
-        <img
+        <Image
           src="/main/blue.png"
+          width={1920}
+          height={759}
           alt="Blue"
           className="opacity-0 transition-opacity duration-500"
           style={{ opacity: isImageVisible ? 1 : 0 }}

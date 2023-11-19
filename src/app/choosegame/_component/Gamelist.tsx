@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Gamelist() {
   return (
@@ -13,7 +14,12 @@ export default function Gamelist() {
         </div>
         <Link href="/game">
           <button className="absolute w-[338px] h-[400px] top-0 left-0">
-            <img src="/main/img/alice (1).png" />
+            <Image
+              src="/main/img/alice (1).png"
+              width={338}
+              height={406}
+              alt="All"
+            />
           </button>
         </Link>
       </div>
@@ -23,8 +29,10 @@ export default function Gamelist() {
         </div>
 
         <div className="absolute w-[338px] h-[400px] top-0 left-0">
-          <img
+          <Image
             className="absolute w-[338px] h-[400px] top-0 left-0"
+            width={338}
+            height={400}
             alt="Element"
             src="/main/img/alice (2).png"
           />
@@ -35,9 +43,11 @@ export default function Gamelist() {
           피터팬
         </div>
 
-        <img
+        <Image
           className="w-[276px] left-[31px] absolute h-[400px] top-0"
           alt="Element"
+          width={300}
+          height={400}
           src="/main/img/alice (3).png"
         />
       </div>
@@ -47,9 +57,11 @@ export default function Gamelist() {
         </p>
 
         <div className="absolute w-[338px] h-[400px] top-0 left-0">
-          <img
+          <Image
             className="w-[276px] left-[31px] absolute h-[400px] top-0"
             alt="Element"
+            width={338}
+            height={400}
             src="/main/img/alice (4).png"
           />
         </div>
