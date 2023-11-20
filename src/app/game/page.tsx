@@ -10,10 +10,10 @@ import Go from "./_component/Go";
 
 export default function Home() {
   const { unityProvider, isLoaded } = useUnityContext({
-    loaderUrl: "build/test.loader.js",
-    dataUrl: "build/test.data",
-    frameworkUrl: "build/test.framework.js",
-    codeUrl: "build/test.wasm",
+    loaderUrl: "build/Alice.loader.js",
+    dataUrl: "build/Alice.data",
+    frameworkUrl: "build/Alice.framework.js",
+    codeUrl: "build/Alice.wasm",
   });
 
   const contentRef = useRef<HTMLDivElement>(null);
